@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="in.kumar.krish.restaurantapp.Screen1"
+    tools:showIn="@layout/app_bar_main">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/screen1"
+        android:src="@drawable/screen1"
+        android:scaleType="fitXY"
+        android:layout_weight="1" />
+
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:text="@string/dine_in"
+        android:id="@+id/dineButton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150sp"
+        android:background="@drawable/roundshapebtn"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:text="@string/pick_up"
+        android:id="@+id/pickButton"
+        android:background="@drawable/roundshapebtn"
+        android:textColor="#ffffff"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dineButton"
+        android:layout_marginTop="60sp"/>
+
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:text="@string/status"
+        android:id="@+id/statusButton"
+        android:background="@drawable/roundshapebtn"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/pickButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60sp"/>
+
+</RelativeLayout>

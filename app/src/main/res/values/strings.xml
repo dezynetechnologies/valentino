@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Restaurant App</string>
+    <string name="action_settings">Settings</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="d1">PorschestraBe 26-30 \n 38440 Wolfsburg</string>
+    <string name="d2">Ritterbrunnen 4 \n 38100 Braunschweig</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dine_in">Dine In</string>
+    <string name="pick_up">Pick Up</string>
+    <string name="status">Status</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="user_name">User Name</string>
+    <string name="user_email">username@gmail.com</string>
+</resources>
