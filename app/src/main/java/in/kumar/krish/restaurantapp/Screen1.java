@@ -2,8 +2,10 @@ package in.kumar.krish.restaurantapp;
 
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -14,8 +16,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+//import com.google.android.gms.plus.Plus;
 
-public class Screen1 extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener {
+
+public class Screen1 extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener,PlusOneFragment.OnFragmentInteractionListener {
 
     public Screen1() {
     }
@@ -36,6 +40,7 @@ public class Screen1 extends AppCompatActivity  implements NavigationView.OnNavi
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        /*
         Button bt1 = (Button)findViewById(R.id.dineButton);
         bt1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,11 +49,49 @@ public class Screen1 extends AppCompatActivity  implements NavigationView.OnNavi
                 Intent intent = new Intent(getApplication(),Screen2.class);
                 startActivity(intent);
 
+
             }
-        });
+        });*/
+
+// Check that the activity is using the layout version with
+        // the fragment_container FrameLayout
+        if (findViewById(R.id.fragment_container) != null) {
+
+            // However, if we're being restored from a previous state,
+            // then we don't need to do anything and should return or else
+            // we could end up with overlapping fragments.
+            if (savedInstanceState != null) {
+                return;
+            }
+            PlusOneFragment newFragment = PlusOneFragment.newInstance("param1", "param2");
+            //FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
+            // Add the fragment to the 'fragment_container' FrameLayout
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.fragment_container, newFragment).commit();
+            //transaction.addToBackStack(null);
+        }
 
 
     }
+
+    /*
+    private static void launchItemFragment(int position){
+        //DetailFragment newFragment = new DetailFragment();
+        //Bundle args = new Bundle();
+        //args.putInt(DetailFragment.ARG_PARAM1, position);
+        //newFragment.setArguments(args);
+         newFragment = PlusOneFragment.newInstance("param_1","param_2");
+
+        FragmentTransaction transaction =  mFragmentManager.beginTransaction();
+
+        // Replace whatever is in the fragment_container view with this fragment,
+        // and add the transaction to the back stack so the user can navigate back
+        transaction.replace(R.id., newFragment);
+        transaction.addToBackStack(null);
+        // Commit the transaction
+        transaction.commit();
+    }*/
 
     @Override
     public void onBackPressed() {
@@ -95,4 +138,6 @@ public class Screen1 extends AppCompatActivity  implements NavigationView.OnNavi
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    public void onFragmentInteraction(Uri uri){}
 }

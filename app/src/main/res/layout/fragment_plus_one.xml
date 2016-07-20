@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlusOneFragment">
+
+    <!--com.google.android.gms.plus.PlusOneButton xmlns:plus="http://schemas.android.com/apk/lib/com.google.android.gms.plus"
+        android:id="@+id/plus_one_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        plus:annotation="inline"
+        plus:size="standard" /-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/status"
+        android:id="@+id/statusButton"
+        android:background="@drawable/roundshapebtn"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/pickButton"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="150sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="@string/pick_up"
+        android:id="@+id/pickButton"
+        android:background="@drawable/roundshapebtn"
+        android:textColor="#ffffff"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/dineButton"
+        android:layout_marginTop="10sp"
+        android:layout_gravity="center" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dine_in"
+        android:id="@+id/dineButton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/roundshapebtn"
+        android:layout_marginTop="90sp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal|top" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/screen1"
+        android:src="@drawable/screen1"
+        android:scaleType="fitXY"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal|top" />
+
+</FrameLayout>
