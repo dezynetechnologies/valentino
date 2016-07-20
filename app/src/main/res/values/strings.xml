@@ -16,4 +16,8 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="user_name">User Name</string>
     <string name="user_email">username@gmail.com</string>
+    <string name="special_offers">SPECIAL OFFERS</string>
+    <string name="saved_order">SAVED ORDERS</string>
+    <string name="built_order">BUILT ORDER</string>
+    
 </resources>

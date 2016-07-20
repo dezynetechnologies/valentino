@@ -1,8 +1,6 @@
 package in.kumar.krish.restaurantapp;
 
 
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentTransaction;
@@ -11,15 +9,14 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
 //import com.google.android.gms.plus.Plus;
 
 
-public class Screen1 extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener,PlusOneFragment.OnFragmentInteractionListener {
+public class Screen1 extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener,PlusOneFragment.OnFragmentInteractionListener,RestaurantFinder.OnFragmentInteractionListener {
 
     public Screen1() {
     }
@@ -139,5 +136,31 @@ public class Screen1 extends AppCompatActivity  implements NavigationView.OnNavi
         return true;
     }
 
-    public void onFragmentInteraction(Uri uri){}
+    public void onFragmentInteraction(Integer uri){
+        Log.d("HomeActivity",uri.toString());
+        switch(uri){
+            case R.id.sofferButton:
+                RestaurantFinder newFinderFragment = RestaurantFinder.newInstance("","");
+                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                transaction.replace(R.id.fragment_container,newFinderFragment).commit();
+                //transaction.addToBackStack(null);
+                break;
+            case R.id.sorderButton:
+                RestaurantFinder newFinderFragment1 = RestaurantFinder.newInstance("","");
+                FragmentTransaction transaction1 = getSupportFragmentManager().beginTransaction();
+                transaction1.replace(R.id.fragment_container,newFinderFragment1).commit();
+
+                break;
+            case R.id.statusButton:
+                break;
+
+            case R.id.chooseRestButton:
+                //launch next fragment from here
+
+                break;
+        }
+
+    }
+
+
 }

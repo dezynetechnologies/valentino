@@ -21,7 +21,7 @@
         android:layout_width="150sp"
         android:layout_height="50sp"
         android:text="@string/dine_in"
-        android:id="@+id/dineButton"
+        android:id="@+id/sofferButton"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="150sp"
@@ -32,12 +32,12 @@
         android:layout_width="150sp"
         android:layout_height="50sp"
         android:text="@string/pick_up"
-        android:id="@+id/pickButton"
+        android:id="@+id/sorderButton"
         android:background="@drawable/roundshapebtn"
         android:textColor="#ffffff"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/dineButton"
+        android:layout_below="@+id/sofferButton"
         android:layout_marginTop="60sp"/>
 
     <Button
@@ -47,7 +47,7 @@
         android:id="@+id/statusButton"
         android:background="@drawable/roundshapebtn"
         android:textColor="#ffffff"
-        android:layout_below="@+id/pickButton"
+        android:layout_below="@+id/sorderButton"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="60sp"/>
 

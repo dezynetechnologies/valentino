@@ -35,16 +35,6 @@ public class Screen2 extends AppCompatActivity  implements NavigationView.OnNavi
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        Button bt1 = (Button)findViewById(R.id.dineButton);
-        bt1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-
-            }
-        });
-
-
     }
 
     @Override

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/specialimageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/special"
+        android:scaleType="fitXY" />
+
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:text="Party Pack"
+        android:id="@+id/button2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:background="@drawable/roundshapebtn2" />
+
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:text="Sunday Special"
+        android:id="@+id/button3"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/roundshapebtn2"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:text="Munchies Deal"
+        android:id="@+id/button4"
+        android:background="@drawable/roundshapebtn2"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp" />
+
+    <Button
+        android:layout_width="150sp"
+        android:layout_height="50sp"
+        android:text="Date Special"
+        android:id="@+id/button5"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/roundshapebtn2"
+        android:layout_below="@+id/button4"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
