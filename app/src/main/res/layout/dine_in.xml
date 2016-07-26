@@ -17,7 +17,7 @@
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_width="250sp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/d1"
         android:id="@+id/d1"
@@ -27,15 +27,13 @@
         android:layout_marginTop="42dp" />
 
     <Button
-        android:layout_width="250sp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/d2"
         android:id="@+id/d2"
         android:background="@drawable/roundshapebtn2"
         android:layout_below="@+id/d1"
-        android:layout_alignLeft="@+id/d1"
-        android:layout_alignStart="@+id/d1"
-        android:layout_marginTop="22dp"/>
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="fill_parent"

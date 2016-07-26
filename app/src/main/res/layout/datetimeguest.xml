@@ -9,37 +9,25 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Choose Date"
         android:id="@+id/DateChooser"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="61dp" />
-
-    <Button
-        android:layout_width="fill_parent"
-        android:layout_height="60sp"
-        android:text="Built Order"
-        android:id="@+id/button"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:textColor="#ffffff"
-        android:background="#ff4646" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Choose Time Slot"
-        android:id="@+id/TimeSlot"
-        android:layout_above="@+id/horizontalScrollView"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/PickUp"
         android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Pick Up"
+        android:text="Choose Time Slot"
+        android:layout_marginTop="20sp"
+        android:id="@+id/TimeSlot"
+        android:layout_below="@+id/datePicker"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Dine In"
         android:id="@+id/PickUp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -51,10 +39,9 @@
         android:layout_height="60sp"
         android:id="@+id/horizontalScrollView2"
         android:background="@drawable/roundshapebtn2"
+        android:layout_marginTop="10dp"
         android:layout_below="@+id/horizontalScrollView"
-        android:layout_marginTop="20dp"
-        android:layout_alignLeft="@+id/horizontalScrollView"
-        android:layout_alignStart="@+id/horizontalScrollView">
+        android:layout_centerHorizontal="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -92,11 +79,75 @@
     <HorizontalScrollView
         android:layout_width="200sp"
         android:layout_height="60sp"
+        android:id="@+id/horizontalScrollView3"
+        android:background="@drawable/roundshapebtn2"
+        android:layout_below="@+id/guestText"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:layout_width="60sp"
+                android:layout_height="50sp"
+                android:text="2"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10sp"
+                android:background="@drawable/roundshapebtn"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="60sp"
+                android:layout_height="50sp"
+                android:text="4"
+                android:layout_gravity="center"
+                android:background="@drawable/roundshapebtn"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="60sp"
+                android:layout_height="50sp"
+                android:text="6"
+                android:layout_gravity="center"
+                android:background="@drawable/roundshapebtn"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="60sp"
+                android:layout_height="50sp"
+                android:text="8"
+                android:layout_gravity="center"
+                android:background="@drawable/roundshapebtn"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="60sp"
+                android:layout_height="50sp"
+                android:text="10"
+                android:layout_gravity="center"
+                android:background="@drawable/roundshapebtn"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="60sp"
+                android:layout_height="50sp"
+                android:text="12"
+                android:layout_gravity="center"
+                android:background="@drawable/roundshapebtn"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="200sp"
+        android:layout_height="60sp"
         android:id="@+id/horizontalScrollView"
         android:background="@drawable/roundshapebtn2"
 
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true">
+        android:layout_below="@+id/TimeSlot"
+        android:layout_alignLeft="@+id/datePicker"
+        android:layout_alignStart="@+id/datePicker">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -199,11 +250,42 @@
 
     <DatePicker
         android:layout_width="200sp"
-        android:layout_height="100sp"
+        android:layout_height="90sp"
         android:id="@+id/datePicker"
         android:layout_below="@+id/DateChooser"
         android:layout_centerHorizontal="true"
-        android:spinnersShown="true" />
+        android:spinnersShown="true"
+        android:startYear="2016" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Choose No. of Guests"
+        android:id="@+id/guestText"
+        android:layout_marginTop="20sp"
+        android:layout_below="@+id/horizontalScrollView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/note"
+        android:id="@+id/textView2"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:layout_below="@+id/horizontalScrollView3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="60sp"
+        android:text="Built Order"
+        android:id="@+id/button6"
+        android:textColor="#ffffff"
+        android:background="#ff4646"
+        android:layout_alignParentBottom="true" />
 
 
 </RelativeLayout>

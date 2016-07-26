@@ -19,5 +19,7 @@
     <string name="special_offers">SPECIAL OFFERS</string>
     <string name="saved_order">SAVED ORDERS</string>
     <string name="built_order">BUILT ORDER</string>
+    <string name="note">*For more than 12 guests please contact xxxx-xxxx-xxxx</string>
+    <string name="item_desc">Homemade grilled vegetables and fresh mushrooms on tomato sauce and mozzarella</string>
     
 </resources>
