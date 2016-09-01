@@ -2,10 +2,11 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+    android:layout_width="fill_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:context="in.kumar.krish.restaurantapp.MainActivity">
+
 
     <ImageView
         android:layout_width="match_parent"
@@ -22,7 +23,7 @@
         android:layout_alignParentEnd="true" />
 
     <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:id="@+id/loginScreen"
         android:src="@drawable/loginscreen"
@@ -55,7 +56,6 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:text="@string/email_address"
-        android:contextClickable="false"
         android:alpha="0"
         android:background="@drawable/roundshapebtn"/>
 

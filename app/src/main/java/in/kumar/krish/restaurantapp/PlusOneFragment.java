@@ -1,6 +1,7 @@
 package in.kumar.krish.restaurantapp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -82,14 +83,18 @@ public class PlusOneFragment extends Fragment {
         dine.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onButtonPressed(R.id.sofferButton);
+                Context context = view.getContext();
+                Intent intent = new Intent(context, RestaurantChooser.class);
+                startActivity(intent);
             }
         });
 
         pick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onButtonPressed(R.id.sorderButton);
+                Context context = view.getContext();
+                Intent intent = new Intent(context, DineScreen2.class);
+                startActivity(intent);
             }
         });
 

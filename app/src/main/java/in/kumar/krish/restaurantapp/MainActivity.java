@@ -1,5 +1,6 @@
 package in.kumar.krish.restaurantapp;
 
+import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.inputmethodservice.KeyboardView;
@@ -20,7 +21,7 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity  {
 
-
+EditText Email,Password;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,11 +29,12 @@ public class MainActivity extends Activity  {
         //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         //setSupportActionBar(toolbar);
 
+
         ImageView Splash = (ImageView)findViewById(R.id.splashScreen);
         ImageView Login = (ImageView)findViewById(R.id.loginScreen);
         TextView Welcome = (TextView)findViewById(R.id.welcomeText);
-        final EditText Email = (EditText) findViewById(R.id.emailText);
-        final EditText Password = (EditText) findViewById(R.id.passwordText);
+          Email = (EditText) findViewById(R.id.emailText);
+          Password = (EditText) findViewById(R.id.passwordText);
         final Button LoginButton =(Button)findViewById(R.id.Loginbutton);
 
         Splash.animate().alpha(0f).setDuration(5000);
@@ -96,4 +98,15 @@ public class MainActivity extends Activity  {
         return super.onOptionsItemSelected(item);
     }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        View decorView = getWindow().getDecorView();
+// Hide the status bar.
+        int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
+// Remember that you should never show the action bar if the
+// status bar is hidden, so hide that too if necessary.
+
+    }
 }

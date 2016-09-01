@@ -21,5 +21,6 @@
     <string name="built_order">BUILT ORDER</string>
     <string name="note">*For more than 12 guests please contact xxxx-xxxx-xxxx</string>
     <string name="item_desc">Homemade grilled vegetables and fresh mushrooms on tomato sauce and mozzarella</string>
-    
+    <string name="antipasta">AntiPasta</string>
+
 </resources>

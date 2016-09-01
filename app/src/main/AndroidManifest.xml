@@ -17,7 +17,6 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -26,7 +25,18 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Screen2"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme" />
+        <activity android:name=".DineScreen2"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ComplexScreen"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".RestaurantChooser"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".OfferScreen"
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".ZipCode"
+            android:theme="@style/AppTheme"/>
     </application>
+
 
 </manifest>

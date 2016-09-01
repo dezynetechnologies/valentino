@@ -16,7 +16,7 @@ import android.view.MenuItem;
 //import com.google.android.gms.plus.Plus;
 
 
-public class Screen1 extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener,PlusOneFragment.OnFragmentInteractionListener,RestaurantFinder.OnFragmentInteractionListener {
+public class Screen1 extends AppCompatActivity  implements NavigationView.OnNavigationItemSelectedListener,PlusOneFragment.OnFragmentInteractionListener {
 
     public Screen1() {
     }
@@ -140,15 +140,10 @@ public class Screen1 extends AppCompatActivity  implements NavigationView.OnNavi
         Log.d("HomeActivity",uri.toString());
         switch(uri){
             case R.id.sofferButton:
-                RestaurantFinder newFinderFragment = RestaurantFinder.newInstance("","");
-                FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-                transaction.replace(R.id.fragment_container,newFinderFragment).commit();
-                //transaction.addToBackStack(null);
+
                 break;
             case R.id.sorderButton:
-                RestaurantFinder newFinderFragment1 = RestaurantFinder.newInstance("","");
-                FragmentTransaction transaction1 = getSupportFragmentManager().beginTransaction();
-                transaction1.replace(R.id.fragment_container,newFinderFragment1).commit();
+
 
                 break;
             case R.id.statusButton:
