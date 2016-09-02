@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <HorizontalScrollView
@@ -60,7 +63,7 @@
         android:textAlignment="center"
         android:background="#ff4646"
         android:textColor="#ffffff"
-        android:textSize="25sp" />
+        android:textSize="25sp"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -132,7 +135,8 @@
         android:layout_height="500dp"
         android:layout_below="@+id/button9"
         android:layout_marginTop="10sp"
-        android:layout_marginBottom="50sp">
+        android:layout_marginBottom="50sp"
+        android:id="@+id/horizontalScrollView5">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -141,13 +145,13 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/imageView2"
+            android:id="@+id/imageView1"
             android:src="@drawable/menu_screen_1"
             android:scaleType="fitXY"
             android:layout_above="@+id/horizontalScrollView4"
             android:layout_centerHorizontal="true" />
 
-        <ImageView
+            <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/imageView3"
@@ -165,6 +169,20 @@
             android:layout_centerHorizontal="true" />
         </LinearLayout>
     </HorizontalScrollView>
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity=""
+        android:src="@drawable/cart"
+        app:layout_anchorGravity="bottom|right|end"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_above="@+id/button9"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/addcart" />
 
 
 </RelativeLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cart">
+
+     <Button
+        android:layout_width="fill_parent"
+        android:layout_height="60sp"
+        android:text="Place Order"
+        android:id="@+id/paytm"
+        android:textColor="#ffffff"
+        android:background="#ff4646"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+         android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/roundshapebtn2"
+        android:enabled="true"
+        android:text="650 Rs"
+        android:textAlignment="center"
+        android:textColor="#ff4f4f"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="CheckOut"
+        android:id="@+id/textView6"
+        android:textAlignment="center"
+        android:background="#ff4646"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:id="@+id/relativeLayout"
+        android:background="@drawable/background"
+        android:layout_below="@+id/relativeLayout3"
+        android:layout_marginTop="1dp"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/antipasta"
+            android:layout_alignBottom="@+id/description"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Antipasta"
+            android:textSize="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/description"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="Olives"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="300 Rs"
+            android:id="@+id/textView4"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_alignParentEnd="true"
+            android:textColor="#000000" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="45dp"
+        android:id="@+id/relativeLayout3"
+        android:layout_below="@+id/textView6"
+        android:layout_alignEnd="@+id/editText2"
+        android:background="@drawable/background">
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/pasta"
+            android:layout_alignBottom="@+id/description"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pasta"
+            android:textSize="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/description"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="White Sauce"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="200 Rs"
+            android:id="@+id/textView4"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_alignParentEnd="true"
+            android:textColor="#000000" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_alignParentStart="true"
+        android:id="@+id/relativeLayout2"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/background">
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/pizza"
+            android:layout_alignBottom="@+id/description"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pizza"
+            android:textSize="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/description"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="Cheese Burst"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="150 Rs"
+            android:id="@+id/textView4"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_alignParentEnd="true"
+            android:textColor="#000000" />
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Total Amount"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentStart="true"
+        android:textSize="25dp" />
+
+</RelativeLayout>

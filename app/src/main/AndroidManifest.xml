@@ -36,6 +36,11 @@
             android:theme="@style/AppTheme"/>
         <activity android:name=".ZipCode"
             android:theme="@style/AppTheme"/>
+        <activity android:name=".Cart"
+            android:label="CheckOut"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".SpecialOffers"
+            android:theme="@style/AppTheme" />
     </application>
 
 

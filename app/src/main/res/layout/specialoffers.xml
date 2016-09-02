@@ -4,7 +4,7 @@
 
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:id="@+id/specialimageView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -21,7 +21,9 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="58dp"
-        android:background="@drawable/roundshapebtn2" />
+        android:background="@drawable/roundshapebtn2"
+        android:textColor="#000000"
+        android:textStyle="normal|bold" />
 
     <Button
         android:layout_width="150sp"
@@ -31,7 +33,8 @@
         android:layout_marginTop="50dp"
         android:background="@drawable/roundshapebtn2"
         android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold" />
 
     <Button
         android:layout_width="150sp"
@@ -41,7 +44,8 @@
         android:background="@drawable/roundshapebtn2"
         android:layout_below="@+id/button3"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="77dp" />
+        android:layout_marginTop="77dp"
+        android:textStyle="normal|bold" />
 
     <Button
         android:layout_width="150sp"
@@ -51,5 +55,6 @@
         android:layout_marginTop="48dp"
         android:background="@drawable/roundshapebtn2"
         android:layout_below="@+id/button4"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textStyle="normal|bold" />
 </RelativeLayout>
