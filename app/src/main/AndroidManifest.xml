@@ -25,9 +25,10 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Screen2"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme.AppBarOverlay" />
         <activity android:name=".DineScreen2"
-            android:theme="@style/AppTheme"/>
+            android:label="Dine In"
+            android:theme="@style/AppTheme.AppBarOverlay"/>
         <activity android:name=".ComplexScreen"
             android:theme="@style/AppTheme"/>
         <activity android:name=".RestaurantChooser"

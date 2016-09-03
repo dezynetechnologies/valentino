@@ -24,40 +24,44 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <Button
-            android:layout_width="150sp"
-            android:layout_height="50sp"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
             android:text="@string/dine_in"
             android:id="@+id/sofferButton"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:background="@drawable/roundshapebtn"
-            android:layout_marginTop="90sp"
+            android:layout_marginTop="200sp"
             android:textColor="#ffffff"
-            android:layout_gravity="center_horizontal|top" />
+            android:layout_gravity="center_horizontal|top"
+            android:textSize="20dp" />
 
         <Button
-            android:layout_width="150sp"
-            android:layout_height="50sp"
+            android:layout_width="300sp"
+            android:layout_height="wrap_content"
             android:text="@string/pick_up"
             android:id="@+id/sorderButton"
             android:background="@drawable/roundshapebtn"
             android:textColor="#ffffff"
             android:layout_gravity="center"
+            android:layout_below="@+id/sofferButton"
+            android:layout_marginTop="44sp"
             android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:textSize="20dp" />
 
         <Button
-            android:layout_width="150sp"
-            android:layout_height="50sp"
+            android:layout_width="300sp"
+            android:layout_height="50dp"
             android:text="@string/status"
             android:id="@+id/statusButton"
             android:background="@drawable/roundshapebtn"
             android:textColor="#ffffff"
-            android:layout_marginTop="50sp"
             android:layout_gravity="center"
-            android:layout_marginBottom="85dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true" />
+            android:textSize="20sp"
+            android:layout_marginTop="44dp"
+            android:layout_below="@+id/sorderButton"
+            android:layout_alignStart="@+id/sorderButton" />
     </RelativeLayout>
 
 </FrameLayout>

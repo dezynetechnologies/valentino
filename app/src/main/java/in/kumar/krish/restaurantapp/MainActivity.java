@@ -3,6 +3,7 @@ package in.kumar.krish.restaurantapp;
 import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.inputmethodservice.KeyboardView;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -30,12 +31,15 @@ EditText Email,Password;
         //setSupportActionBar(toolbar);
 
 
-        ImageView Splash = (ImageView)findViewById(R.id.splashScreen);
-        ImageView Login = (ImageView)findViewById(R.id.loginScreen);
-        TextView Welcome = (TextView)findViewById(R.id.welcomeText);
-          Email = (EditText) findViewById(R.id.emailText);
-          Password = (EditText) findViewById(R.id.passwordText);
-        final Button LoginButton =(Button)findViewById(R.id.Loginbutton);
+        ImageView Splash = (ImageView) findViewById(R.id.splashScreen);
+        ImageView Login = (ImageView) findViewById(R.id.loginScreen);
+        TextView Welcome = (TextView) findViewById(R.id.welcomeText);
+        Email = (EditText) findViewById(R.id.emailText);
+        Password = (EditText) findViewById(R.id.passwordText);
+        final Button LoginButton = (Button) findViewById(R.id.Loginbutton);
+        Typeface face = Typeface.createFromAsset(getAssets(), "Fonts/Arizonia-Regular.ttf");
+        Welcome.setTypeface(face);
+
 
         Splash.animate().alpha(0f).setDuration(5000);
         Login.animate().alpha(1f).setDuration(5000);
@@ -65,13 +69,12 @@ EditText Email,Password;
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getApplication(),Screen1.class);
+                Intent intent = new Intent(getApplication(), Screen1.class);
                 startActivity(intent);
 
 
             }
         });
-
 
 
     }

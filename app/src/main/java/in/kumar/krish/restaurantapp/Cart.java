@@ -28,17 +28,16 @@ Button pay;
         pay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(
-                        context);
+                AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context,R.style.MyStyle);
 
                 // set title
-                alertDialogBuilder.setTitle("Order Confirmed");
+                alertDialogBuilder.setTitle("\t\t\t\t\tOrder Confirmed");
 
                 // set dialog message
                 alertDialogBuilder
                         .setMessage("Your Order has been placed.\n Your id is 65454")
                         .setCancelable(false)
-                        .setPositiveButton("OK",new DialogInterface.OnClickListener() {
+                        .setPositiveButton("OK\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t",new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog,int id) {
                                 // if this button is clicked, close
                                 // current activity
@@ -51,7 +50,7 @@ Button pay;
 
                 // create alert dialog
                 AlertDialog alertDialog = alertDialogBuilder.create();
-
+                alertDialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
                 // show it
                 alertDialog.show();
             }
