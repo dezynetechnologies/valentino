@@ -12,7 +12,7 @@
         android:text="Place Order"
         android:id="@+id/paytm"
         android:textColor="#ffffff"
-        android:background="#ff4646"
+        android:background="@color/colorPrimary"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
          android:textSize="25dp" />
@@ -29,21 +29,8 @@
         android:enabled="true"
         android:text="650 Rs"
         android:textAlignment="center"
-        android:textColor="#ff4f4f"
+        android:textColor="@color/colorPrimary"
         android:textSize="20sp" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="CheckOut"
-        android:id="@+id/textView6"
-        android:textAlignment="center"
-        android:background="#ff4646"
-        android:textColor="#ffffff"
-        android:textSize="25sp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -102,7 +89,6 @@
         android:padding="16dp"
         android:layout_marginTop="45dp"
         android:id="@+id/relativeLayout3"
-        android:layout_below="@+id/textView6"
         android:layout_alignEnd="@+id/editText2"
         android:background="@drawable/background">
         <ImageView
